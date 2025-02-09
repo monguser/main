@@ -10,7 +10,7 @@ CMD ["npm", "run", "start"]
 FROM base AS prod
 RUN npm run build
 
-FROM nginx:16-alpine
+FROM nginx
 
 EXPOSE 80
 
