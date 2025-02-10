@@ -15,11 +15,6 @@ RUN npm run build
 
 FROM nginx
 EXPOSE 80
-<<<<<<< HEAD:Dockerfile
 COPY --from=prod /app/build /usr/share/nginx/html
 CMD ["nginx", "-g", "daemon off;"]
 
-=======
-
-COPY --from=prod /app/build /usr/share/nginx/html
->>>>>>> fbef693ad59a13e6d81a100c34e0aa53c7b3b2f8:CAPM_Codes/Dockerfile
