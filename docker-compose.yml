@@ -6,7 +6,7 @@ services:
       - CHOKIDAR_USEPOLLING=true
     build:
       context: .
-      target: "base"
+      target: "dev"
     ports:
       - '3000:3000'
     volumes:
@@ -18,7 +18,7 @@ services:
       - CHOKIDAR_USEPOLLING=true
     build:
       context: .
-      target: "base"
+      target: "dev"
     volumes:
       - /app/node_modules
       - .:/app
