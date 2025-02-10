@@ -13,6 +13,7 @@ CMD ["npm", "run", "start"]
 FROM base AS prod
 RUN npm run build
 
+#nginx server
 FROM nginx
 EXPOSE 80
 COPY --from=prod /app/build /usr/share/nginx/html
