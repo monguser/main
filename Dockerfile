@@ -4,9 +4,6 @@ WORKDIR '/app'
 COPY package.json .
 RUN npm install
 COPY . .
-
-#Dev
-FROM base AS dev
 CMD ["npm", "run", "start"]
 
 #Prod 
